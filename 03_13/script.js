@@ -1,6 +1,7 @@
 /**
  * Use the global Date() object to transform dates.
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+ * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
  */
 
 import Backpack from "./Backpack.js";
