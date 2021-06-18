@@ -33,3 +33,7 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 [lil-course-url]: https://www.linkedin.com/learning/javascript-essential-training
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2832077/2832077-1610728160487-16x9.jpg
+
+
+### notes
+[how to handle multiple github users on one machine](https://gist.github.com/Jonalogy/54091c98946cfe4f8cdab2bea79430f9)
