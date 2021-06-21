@@ -9,7 +9,6 @@
 import Backpack from "./Backpack.js";
 import Cup from "./Cup.js";
 import Drink from "./Drink.js";
-import Book from "./Book.js";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -55,61 +54,3 @@ console.log("The cup object:", cup);
 const drink3 = new Drink("coffee", "iced");
 cup.fillCup(drink3);
 console.log("The cup object:", cup);
-
-const book1 = new Book(
-  "MicroElectronic Circuits",
-  "Sedra",
-  "Computers",
-  "How to build circuits",
-  null,
-  null,
-  null,
-  null
-);
-console.log("book1:", book1);
-console.log(
-  "  start date:",
-  book1.startDate,
-  " finished date:",
-  book1.finishedDate,
-  " updated date:",
-  book1.updatedDate,
-  "page number:",
-  book1.pageNumber
-);
-book1.startReading();
-console.log("book1 reading:", book1);
-console.log(
-  "  start date:",
-  book1.startDate,
-  " finished date:",
-  book1.finishedDate,
-  " updated date:",
-  book1.updatedDate,
-  "page number:",
-  book1.pageNumber
-);
-book1.updateReading(100);
-console.log("book1 update:", book1);
-console.log(
-  "  start date:",
-  book1.startDate,
-  " finished date:",
-  book1.finishedDate,
-  " updated date:",
-  book1.updatedDate,
-  "page number:",
-  book1.pageNumber
-);
-book1.finishReading();
-console.log("book1 finished:", book1);
-console.log(
-  "  start date:",
-  book1.startDate,
-  " finished date:",
-  book1.finishedDate,
-  " updated date:",
-  book1.updatedDate,
-  "page number:",
-  book1.pageNumber
-);
