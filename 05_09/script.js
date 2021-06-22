@@ -2,6 +2,7 @@
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
  */
 
 import Backpack from "./Backpack.js";
