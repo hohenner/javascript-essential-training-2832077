@@ -2,6 +2,7 @@
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
  */
 
 import Backpack from "./Backpack.js";
@@ -51,3 +52,16 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+var title = document.querySelector(".site-title");
+
+console.log("title:", title);
+console.log("title style (lists all possible styles):", title.style);
+console.log("Title style color:", title.style.color);
+// change color of style
+title.style.color = "rebeccapurple";
+console.log("Title style new color:", title.style.color);
+// add a new style
+console.log("full style string:", title.style.cssText);
+title.style.backgroundColor = "pink";
+console.log("full style string:", title.style.cssText);
