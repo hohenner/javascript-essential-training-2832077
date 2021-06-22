@@ -3,6 +3,12 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/append
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement
  */
 
 import Backpack from "./Backpack.js";
