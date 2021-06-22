@@ -2,6 +2,7 @@
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes
  */
 
 import Backpack from "./Backpack.js";
@@ -51,3 +52,20 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+var img = document.querySelector("img");
+console.log("img:", img);
+console.log("img attributes", img.attributes);
+console.log("has src attribute:", img.hasAttribute("src"));
+console.log("does not have title attribute:", img.hasAttribute("title"));
+console.log("get value of src attribute:", img.getAttribute("src"));
+console.log("get value of alt attribute (empty):", img.getAttribute("alt"));
+console.log(
+  "set value for attribute:",
+  img.setAttribute("alt", "drawing of backpack")
+);
+console.log(
+  "create value for attribute:",
+  img.setAttribute("title", "invalid")
+);
+console.log("remove invalid attribute", img.removeAttribute("title"));
