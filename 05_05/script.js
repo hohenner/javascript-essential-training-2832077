@@ -51,3 +51,34 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+var volume = document.querySelector(".backpack__volume");
+console.log(
+  "volume class list: ",
+  document.querySelector(".backpack__volume").classList
+);
+volume.classList.add("newClass");
+console.log(
+  "volume class list, add: ",
+  document.querySelector(".backpack__volume").classList
+);
+volume.classList.remove("newClass");
+console.log(
+  "volume class list, remove: ",
+  document.querySelector(".backpack__volume").classList
+);
+volume.classList.toggle("newClass");
+console.log(
+  "volume class list, toggle-add: ",
+  document.querySelector(".backpack__volume").classList
+);
+volume.classList.toggle("newClass");
+console.log(
+  "volume class list, toggle-remove: ",
+  document.querySelector(".backpack__volume").classList
+);
+volume.classList.replace("packprop", "newClass");
+console.log(
+  "volume class list, replace: ",
+  document.querySelector(".backpack__volume").classList
+);
