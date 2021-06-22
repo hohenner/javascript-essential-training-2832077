@@ -64,11 +64,11 @@ main.append(newArticle);
 // challenge
 
 const menu_body = `
-<li><a src="#">home</a></li?>
-<li><a src="#">about</a></li?>
-<li><a src="#">edit</a></li?>
-<li><a src="#">add</a></li?>
-<li><a src="#">exit</a></li?>
+<li><a href="#">home</a></li?>
+<li><a href="#">about</a></li?>
+<li><a href="#">edit</a></li?>
+<li><a href="#">add</a></li?>
+<li><a href="#">exit</a></li?>
 `;
 const menu = document.createElement("ul");
 menu.innerHTML = menu_body;
