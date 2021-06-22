@@ -4,6 +4,7 @@
  *  link to color names: https://htmlcolorcodes.com/color-names/
  */
 
+// by class name
 console.log("siteheader class:", document.querySelector(".siteheader"));
 
 console.log(
@@ -21,4 +22,15 @@ backpack_features.forEach(
   (item) =>
     (item.querySelector(".backpack__volume").style.backgroundColor =
       "lightsteelblue")
+);
+
+// by element type
+var ele = document.querySelector("h1");
+console.log("h1:", ele);
+
+var unlist = document.querySelectorAll("ul");
+
+unlist.forEach(
+  (item) =>
+    (item.querySelector(".backpack__color").style.backgroundColor = "skyblue")
 );
