@@ -1,6 +1,7 @@
 /**
  * Note: This file is intentionally empty.
  * You can use it to test your skills at traversing the DOM using JavaScript.
+ *  link to color names: https://htmlcolorcodes.com/color-names/
  */
 
 console.log("siteheader class:", document.querySelector(".siteheader"));
