@@ -3,7 +3,8 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
  */
 
-let color = "purple";
+/* gets an error of assigning changing the const object */
+const color = "purple";
 
 document.querySelector(".left").style.backgroundColor = color;
 document.querySelector(".left .color-value").innerHTML = color;
