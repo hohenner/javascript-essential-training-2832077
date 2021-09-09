@@ -24,6 +24,7 @@ const frogpack = {
   },
   lidOpen: false,
   image: "../../assets/images/frog.svg",
+  description: "frog backpack",
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -55,5 +56,27 @@ const content = `
       <li class="feature backpack__lid">Lid status:<span> ${
         frogpack.lidOpen ? "open" : "closed"
       }</span></li>
-    </ul>  
+    </ul>
 `;
+
+const main = document.querySelector("main");
+
+const addFigure = (obj) => {
+  let newFigure = document.createElement("figure");
+  let newImg = document.createElement("img");
+  newImg.setAttribute("src", obj.image);
+  newImg.setAttribute("alt", "");
+  let newDesc = document.createElement("figcaption");
+  newDesc.innerText = obj.description;
+  newFigure.append(newImg, newDesc);
+  return newFigure;
+};
+
+const newElement = (frogpack) => {
+  let newArticle = document.createElement("article");
+  newArticle.innerHTML = content;
+  newArticle.prepend(addFigure(frogpack));
+  return newArticle;
+};
+
+main.append(newElement(frogpack));
