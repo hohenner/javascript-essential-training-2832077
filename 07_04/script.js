@@ -49,15 +49,18 @@ console.log("element found: ", el);
 el = contents.find(element_not_found);
 console.log("element not found: ", el);
 
+console.log(
+  "one line solution: ",
+  contents.find((item) => item == "Brush")
+);
 // Remove the item you found using the find method from the array.
 console.log("contents size: ", contents.length);
 console.log(contents);
 
-
 let brushIndex = contents.findIndex(element_found);
 console.log("Brush index: ", brushIndex);
-
-contents.splice(brushIndex,1)
+console.log("alternate index", contents.indexOf("Brush"));
+contents.splice(brushIndex, 1);
 
 console.log("contents size: ", contents.length);
 console.log(contents);
