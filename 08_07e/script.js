@@ -24,3 +24,4 @@ const tipCalculator = (sum, percentage, currency, prefix) => {
 };
 
 tipCalculator(29.95, 18, "kr", false);
+tipCalculator(29.95, 18, "$", true);
